@@ -3,6 +3,7 @@
 
 import PackageDescription
 
+let version = "1.0.1"
 let package = Package(
     name: "ZDLayoutKit",
     products: [
@@ -12,12 +13,12 @@ let package = Package(
             targets: ["ZDLayoutKit", "ZDLayoutKitPackage"])
     ],
     dependencies: [
-        .package(url: "https://github.com/zoho/ZDAttachmentUploader.git", exact: "1.0.0")
+        .package(url: "https://github.com/zoho/ZDAttachmentUploader.git", exact: version)
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZDLayoutKit", url: "https://maven.zohodl.com/ZohoDesk/ZDLayoutKit/1.0.0/ZDLayoutKit.zip", checksum: "c5e54e7a22316f6fa5db6dfcbf431d12af00b8034f80e12561e6adf3d95bd282"),
+        .binaryTarget(name: "ZDLayoutKit", url: "https://maven.zohodl.com/ZohoDesk/ZDLayoutKit/\(version)/ZDLayoutKit.zip", checksum: "6ca5966ac744afb3f602daf44e974553d196394c9c6a0f8644dd7fac77084050"),
         
         .target(
             name: "ZDLayoutKitPackage",
