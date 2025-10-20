@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.0.3"
+let version = Version("1.0.3")
 let package = Package(
     name: "ZDLayoutKit",
     products: [
@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZDLayoutKit", url: "https://maven.zohodl.com/ZohoDesk/ZDLayoutKit/\(version)/ZDLayoutKit.zip", checksum: "018cf230139e226ce9495937ee3224dae38bdc343ab0f8279c11082362a7575b"),
+        .binaryTarget(name: "ZDLayoutKit", url: "https://maven.zohodl.com/ZohoDesk/ZDLayoutKit/\(version.description)/ZDLayoutKit.zip", checksum: "018cf230139e226ce9495937ee3224dae38bdc343ab0f8279c11082362a7575b"),
         
         .target(
             name: "ZDLayoutKitPackage",
